@@ -8,10 +8,9 @@ function App() {
   return (
     <div className='container'>
       <div className='row'>
-        <h2>Coin Market</h2>
         <Routes>
           <Route exact path="/" element={<Currencies />} />
-          <Route exact path="/chart" element={<Chart />} />
+          <Route exact path="/:id" element={<Chart />} />
         </Routes>
       </div>
 
